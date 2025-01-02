@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name = ""
     var body: some View {
         VStack {
             Form{
@@ -19,25 +20,20 @@ struct ContentView: View {
                 //.padding()
             }
             Form{
-                Image(systemName: "command")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                //.padding()
-                Text("Здравейте!")
-                //.padding()
+                ForEach(1..<4) {
+                    Text("Row \($0)")
+                }
             }
             Form{
-                Image(systemName: "control")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                //.padding()
-                Text("Здравейте!")
-                //.padding()
+                TextField("Enter your name", text: $name)
+                Text("Hello \(name)!")
+                }
+            
             }
         }
         //.padding()
     }
-}
+
 
 #Preview {
     ContentView()
