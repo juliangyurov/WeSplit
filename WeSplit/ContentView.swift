@@ -13,17 +13,17 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.red)
-                .padding()
+                //.padding()
             Text("Hello, world!")
-                .padding()
+                //.padding()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-                .padding()
+                //.padding()
             Text("Здравейте!")
-                .padding()
+                //.padding()
         }
-        .padding()
+        //.padding()
     }
 }
 
