@@ -28,7 +28,9 @@ struct ContentView: View {
                 TextField("Enter your name", text: $name)
                 Text("Hello \(name)!")
                 }
-            
+            Form{
+                Text("Hello \(name)!")
+            }
             }
         }
         //.padding()
