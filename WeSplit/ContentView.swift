@@ -10,18 +10,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.red)
+            Form{
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.red)
                 //.padding()
-            Text("Hello, world!")
+                Text("Hello, world!")
                 //.padding()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            }
+            Form{
+                Image(systemName: "command")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
                 //.padding()
-            Text("Здравейте!")
+                Text("Здравейте!")
                 //.padding()
+            }
+            Form{
+                Image(systemName: "control")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                //.padding()
+                Text("Здравейте!")
+                //.padding()
+            }
         }
         //.padding()
     }
